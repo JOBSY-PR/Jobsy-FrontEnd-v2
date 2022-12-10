@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button } from '@mui/material';
+import { BrowserRouter, Link,  Route, Routes } from 'react-router-dom';import './App.css';
+import Display from './components/Display';
+import Mui from './components/Mui';
+import Navbar from './components/Navbar';
+import Post from './components/Post';
+import SignUp from './components/authenticatioin/SignUp'
+import Login from './components/authenticatioin/login';
+import Home from './components/homePage/Home';
+import HomeNavBar from './components/homePage/HomeNavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     
+      
+        <Routes>
+          <Route path='/home/jobs' element={<><Mui /></>} />
+          <Route path='/post' element={<> <HomeNavBar/><Post /> </>} />
+          <Route path='/home' element={<><Home /></>} />
+          <Route path='/' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+     
+      
+      
+  </div>
   );
 }
 
