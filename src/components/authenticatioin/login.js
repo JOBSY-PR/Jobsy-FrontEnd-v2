@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
-    <div>
+    <div className='signup-form'>
         <FormControl 
       
       sx={{
@@ -17,7 +17,7 @@ const Login = () => {
          <h1>Log In</h1>
          <TextField type='email' variant='filled' label='Your email'/>
          <TextField type='password' variant='filled' label='Your password'/>
-         <Button variant='contained'  >LOG IN</Button>
+         <Button variant='contained'><Link to='/home'>LOG IN</Link></Button>
          <p>Don't have an account? <Link to='/'>Sign Up</Link></p>
      </FormControl>
     </div>

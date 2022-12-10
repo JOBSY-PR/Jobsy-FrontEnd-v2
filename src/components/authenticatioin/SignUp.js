@@ -4,10 +4,8 @@ import { Link, Router } from 'react-router-dom'
 
 const SignUp = () => {
   return (
-    <div className='signup-form'>
-        
+    <div className='signup-form'>    
         <FormControl 
-      
          sx={{
             border:'1px solid grey',
             borderRadius:'5px',
@@ -19,10 +17,9 @@ const SignUp = () => {
             <TextField type='email' variant='filled' label='Your email'/>
             <TextField type='password' variant='filled' label='Your password'/>
             <TextField type='password' variant='filled' label='Confirm password'/>
-            <Button variant='contained'  >SIGN UP</Button>
+            <Button variant='contained'  ><Link to='/home'>SIGN UP</Link></Button>
             <p>Already have an account? <Link to='/login'>Login</Link></p>
-        </FormControl>
-        
+        </FormControl>  
     </div>
   )
 }
