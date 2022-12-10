@@ -27,7 +27,7 @@ const Post = () => {
     }
     await axios.post('https://jobsy.up.railway.app/job',   newjob)
   }
-
+//sdfsf
   return (
     <div className='form-input'>
       <FormControl component="form" noValidate autoComplete="off"
