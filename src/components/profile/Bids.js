@@ -25,7 +25,6 @@ const Bids = ({job}) => {
                 setisSelected(response.data);
                 console.log(response.data);
             }
-
             ).catch((error) => {
                 console.log(error);
             }

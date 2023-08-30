@@ -102,7 +102,6 @@ const HomeNavBar = () => {
                                 <div className='signup-section'>
  
                                     <Link style={{ margin: '3px', background:"#1976d2", padding:'3px', color:"white"}} to='/login'>Freelancer</Link>
-
                                     <Link style={{ margin: '3px', background:"#1976d2", padding:'3px', color:"white"}} to='/registerEmployer'>Employer</Link>
 
                                 </div>

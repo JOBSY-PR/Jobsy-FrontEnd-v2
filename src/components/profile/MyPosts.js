@@ -133,7 +133,7 @@ const MyPosts = () => {
                                         <TextField id="filled-basic" label="salary" 
                                        value={newSalary}  onChange={(e)=>{setNewSalary(e.target.value)}}/>
                                         <Button variant='contained' onClick={(e)=> updateTitle(e,job.id)}>SUBMIT</Button>
-                             </FormControl>
+                                </FormControl>
 
                                  </div>
                              
@@ -144,9 +144,6 @@ const MyPosts = () => {
                  </div>
                  <Bids job={job.id} />
              </Paper>
-
-   
-       
              ))}
         </>
     </div>

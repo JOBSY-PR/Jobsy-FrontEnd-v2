@@ -19,8 +19,6 @@ import { createMessage } from '../react-redux/features/jobs/jobSlice';
 import { useParams } from 'react-router-dom';
 
 
-
-
 export default function Mui() {
     const params = useParams()
    
@@ -42,10 +40,8 @@ export default function Mui() {
             belongToJob: id,
             employeeId: (user.id),
             job: job
-           
-
-        }
-      
+        } 
+         
         dispatch(createMessage(newMessage))
         console.log(newMessage)
         alert('You will know if you have been selected in the next 24 hours')
