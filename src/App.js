@@ -23,7 +23,6 @@ import LoginEmployer from './components/authenticatioin/LoginEmployer';
 function App() {
   return (
     <div className="App">
-      
         <Routes>
           <Route path='/jobs' element={<><Mui /><Footer/>  </>} />
           <Route path='/post' element={<> <HomeNavBar/><Post /><Footer/>  </>} />
@@ -36,7 +35,6 @@ function App() {
           <Route path='/loginEmployer' element={<><LoginEmployer /></>} />
           <Route path='/login' element={<><Login /></>} />
           <Route path='aboutus/instagram/jobsydekut' element={<SocialMedia />} />
-
           <Route path='/employer' element={<><EmployerHomePage /><Footer/> </>} />
         </Routes>
 
